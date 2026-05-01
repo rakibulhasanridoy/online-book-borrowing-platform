@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import Body from "@/Components/Body";
+import Footer from "@/Components/Footer";
 
 
 const geistSans = Geist({
@@ -31,7 +32,7 @@ export default function RootLayout({ children }) {
         
         {children}
         <Body/>
-        
+        <Footer/>
         <Script src="https://cdn.tailwindcss.com" strategy="beforeInteractive" />
 <Script id="tailwind-config" strategy="afterInteractive">
   {`
