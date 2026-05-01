@@ -1,5 +1,8 @@
+import Script from 'next/script'
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/Components/Navbar";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +25,109 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>
+        <Navbar/>
+        
+        {children}
+        
+        
+        <Script src="https://cdn.tailwindcss.com" strategy="beforeInteractive" />
+<Script id="tailwind-config" strategy="afterInteractive">
+  {`
+    tailwind.config = {
+      darkMode: "className",
+      theme: {
+        extend: {
+          colors: {
+            "on-background": "#191c1e",
+            "surface-dim": "#d8dadc",
+            "surface": "#f7f9fb",
+            "on-tertiary-fixed-variant": "#653e00",
+            "on-primary-fixed": "#131b2e",
+            "inverse-surface": "#2d3133",
+            "secondary-fixed": "#62fae3",
+            "primary": "#000000",
+            "surface-tint": "#565e74",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed": "#ffddb8",
+            "tertiary-fixed-dim": "#ffb95f",
+            "on-secondary-fixed": "#00201c",
+            "surface-variant": "#e0e3e5",
+            "on-primary-fixed-variant": "#3f465c",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#eff1f3",
+            "surface-container": "#eceef0",
+            "inverse-primary": "#bec6e0",
+            "primary-fixed-dim": "#bec6e0",
+            "on-tertiary-container": "#b87500",
+            "on-secondary-fixed-variant": "#005047",
+            "tertiary": "#000000",
+            "on-tertiary-fixed": "#2a1700",
+            "on-surface": "#191c1e",
+            "on-error-container": "#93000a",
+            "background": "#f7f9fb",
+            "on-secondary": "#ffffff",
+            "on-surface-variant": "#45464d",
+            "secondary-container": "#62fae3",
+            "surface-container-high": "#e6e8ea",
+            "error-container": "#ffdad6",
+            "on-primary-container": "#7c839b",
+            "on-tertiary": "#ffffff",
+            "surface-container-low": "#f2f4f6",
+            "primary-fixed": "#dae2fd",
+            "on-primary": "#ffffff",
+            "on-error": "#ffffff",
+            "outline": "#76777d",
+            "tertiary-container": "#2a1700",
+            "secondary": "#006b5f",
+            "on-secondary-container": "#007165",
+            "secondary-fixed-dim": "#3cddc7",
+            "surface-container-highest": "#e0e3e5",
+            "surface-bright": "#f7f9fb",
+            "primary-container": "#131b2e",
+            "outline-variant": "#c6c6cd"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "xs": "4px",
+            "gutter": "24px",
+            "unit": "4px",
+            "container-max": "1280px",
+            "md": "16px",
+            "lg": "24px",
+            "xl": "48px",
+            "sm": "8px"
+          },
+          "fontFamily": {
+            "h1": ["Newsreader"],
+            "body-lg": ["Manrope"],
+            "label-md": ["Manrope"],
+            "body-md": ["Manrope"],
+            "caption": ["Manrope"],
+            "h3": ["Newsreader"],
+            "h2": ["Newsreader"]
+          
+          },
+          "fontSize": {
+            "h1": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "500" }],
+            "h3": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+            "h2": ["36px", { "lineHeight": "1.25", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  `}
+</Script>
+        </body>
     </html>
   );
 }
