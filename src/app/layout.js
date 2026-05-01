@@ -2,6 +2,7 @@ import Script from 'next/script'
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
+import Body from "@/Components/Body";
 
 
 const geistSans = Geist({
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
         <Navbar/>
         
         {children}
-        
+        <Body/>
         
         <Script src="https://cdn.tailwindcss.com" strategy="beforeInteractive" />
 <Script id="tailwind-config" strategy="afterInteractive">
