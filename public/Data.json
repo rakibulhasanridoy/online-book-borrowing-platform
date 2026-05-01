@@ -1,0 +1,110 @@
+[
+    {
+      "id": 1,
+      "title": "The Silent Forest",
+      "author": "Ayesha Rahman",
+      "description": "A mysterious tale of a village surrounded by a forest where no one dares to enter.",
+      "category": "Story",
+      "available_quantity": 12,
+      "image_url": "https://example.com/images/silent_forest.jpg"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript Essentials",
+      "author": "David Miller",
+      "description": "A beginner-friendly guide to mastering the fundamentals of JavaScript programming.",
+      "category": "Tech",
+      "available_quantity": 20,
+      "image_url": "https://example.com/images/js_essentials.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Stars Above Us",
+      "author": "Nusrat Jahan",
+      "description": "An inspiring journey through space and the mysteries of the universe.",
+      "category": "Science",
+      "available_quantity": 15,
+      "image_url": "https://example.com/images/stars_above.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Hidden Truth",
+      "author": "Tanvir Hasan",
+      "description": "A suspense thriller uncovering secrets buried deep within a family.",
+      "category": "Story",
+      "available_quantity": 8,
+      "image_url": "https://example.com/images/hidden_truth.jpg"
+    },
+    {
+      "id": 5,
+      "title": "React in Action",
+      "author": "Sophia Lee",
+      "description": "Learn how to build dynamic web applications using React.",
+      "category": "Tech",
+      "available_quantity": 18,
+      "image_url": "https://example.com/images/react_in_action.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Quantum Wonders",
+      "author": "Dr. Arif Chowdhury",
+      "description": "An easy-to-understand exploration of quantum physics concepts.",
+      "category": "Science",
+      "available_quantity": 10,
+      "image_url": "https://example.com/images/quantum_wonders.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Lost in Time",
+      "author": "Mehedi Karim",
+      "description": "A time-travel adventure that challenges the boundaries of reality.",
+      "category": "Story",
+      "available_quantity": 14,
+      "image_url": "https://example.com/images/lost_in_time.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Python for Developers",
+      "author": "John Smith",
+      "description": "A comprehensive guide to Python programming for aspiring developers.",
+      "category": "Tech",
+      "available_quantity": 22,
+      "image_url": "https://example.com/images/python_dev.jpg"
+    },
+    {
+      "id": 9,
+      "title": "The Human Brain",
+      "author": "Dr. Sarah Ahmed",
+      "description": "Discover how the human brain works and its incredible capabilities.",
+      "category": "Science",
+      "available_quantity": 9,
+      "image_url": "https://example.com/images/human_brain.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Echoes of the Past",
+      "author": "Rafiq Mahmud",
+      "description": "A historical fiction story that brings the past to life.",
+      "category": "Story",
+      "available_quantity": 11,
+      "image_url": "https://example.com/images/echoes_past.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Full Stack Guide",
+      "author": "Emily Watson",
+      "description": "Master full-stack web development with modern tools and technologies.",
+      "category": "Tech",
+      "available_quantity": 16,
+      "image_url": "https://example.com/images/fullstack_guide.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Climate Change Explained",
+      "author": "Dr. Hasan Ali",
+      "description": "An insightful look into climate change and its global impact.",
+      "category": "Science",
+      "available_quantity": 13,
+      "image_url": "https://example.com/images/climate_change.jpg"
+    }
+  ]
