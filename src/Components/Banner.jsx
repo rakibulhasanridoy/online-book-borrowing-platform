@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export const Banner = () => {
   return (
     <div>
@@ -43,6 +44,21 @@ export const Banner = () => {
       </div>
     </section>
 
+
+    <main className="bg-background text-on-background font-body-md flex flex-col">
+
+    
+
+
+
+
+
+
+
+
+
+
+</main>
     </div>
   )
 }
