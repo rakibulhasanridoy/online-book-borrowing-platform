@@ -52,5 +52,59 @@
     "category": "Science",
     "available_quantity": 10,
     "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+  },
+  {
+    "id": 7,
+    "title": "The Last Lighthouse",
+    "author": "Mira Sultana",
+    "description": "A heartwarming story of a lonely lighthouse keeper who discovers an old letter that changes everything.",
+    "category": "Story",
+    "available_quantity": 14,
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+  },
+  {
+    "id": 8,
+    "title": "Python for Everyone",
+    "author": "James Carter",
+    "description": "A hands-on introduction to Python programming with real-world projects and examples.",
+    "category": "Tech",
+    "available_quantity": 25,
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+  },
+  {
+    "id": 9,
+    "title": "The Human Brain Explained",
+    "author": "Dr. Fatema Khanam",
+    "description": "A fascinating deep-dive into neuroscience, exploring how our brain shapes thoughts and behavior.",
+    "category": "Science",
+    "available_quantity": 9,
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+  },
+  {
+    "id": 10,
+    "title": "Whispers in the Rain",
+    "author": "Rabeya Akter",
+    "description": "A poetic love story set in Dhaka during monsoon season, exploring longing and loss.",
+    "category": "Story",
+    "available_quantity": 11,
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+  },
+  {
+    "id": 11,
+    "title": "Node.js Deep Dive",
+    "author": "Carlos Mendes",
+    "description": "Master backend development with Node.js, covering REST APIs, authentication, and deployment.",
+    "category": "Tech",
+    "available_quantity": 16,
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+  },
+  {
+    "id": 12,
+    "title": "Climate and the Future",
+    "author": "Dr. Sabbir Ahmed",
+    "description": "A scientific look at climate change, its causes, effects, and what humanity can do to reverse it.",
+    "category": "Science",
+    "available_quantity": 13,
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
   }
 ]

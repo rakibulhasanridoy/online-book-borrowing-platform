@@ -34,9 +34,9 @@ const Footer = () => {
 <div className="space-y-4">
 <h4 className="font-label-md text-primary">Community</h4>
 <ul className="space-y-2">
-<li><a className="font-newsreader text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors" href="#">Facebook</a></li>
-<li><a className="font-newsreader text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors" href="#">Instagram</a></li>
-<li><a className="font-newsreader text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors" href="#">Twitter</a></li>
+<li><a className="font-newsreader text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors" href="https://www.facebook.com/rakibulhasan.ridoy.144/">Facebook</a></li>
+<li><a className="font-newsreader text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors" href="https://www.instagram.com/rakibul_h_ridoy/?hl=en">Instagram</a></li>
+<li><a className="font-newsreader text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors" href="https://x.com/">Twitter</a></li>
 </ul>
 </div>
 </div>
