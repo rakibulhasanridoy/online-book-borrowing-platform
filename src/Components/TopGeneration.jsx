@@ -14,7 +14,7 @@ const TopGeneration = () => {
   const { ref: linkRef, className: linkClass, style: linkStyle } = useAnimateOnScroll('fadeInRight')
 
   useEffect(() => {
-    fetch('https://online-book-borrowing-platform-rust.vercel.app/Data.json', { cache: 'no-store' })
+    fetch('/Data.json', { cache: 'no-store' })
       .then(r => r.json())
       .then(setBooks)
   }, [])

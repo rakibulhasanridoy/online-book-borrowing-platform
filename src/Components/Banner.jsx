@@ -42,7 +42,9 @@ export const Banner = () => {
             </button>
           </div>
         </div>
-        <section className="bg-on-tertiary-container py-4 overflow-hidden">
+        
+      </section>
+      <section className="bg-on-tertiary-container py-4 overflow-hidden">
       <div className="marquee-track space-x-12 whitespace-nowrap">
         <span className="text-surface-container-lowest font-label-md flex items-center gap-2 uppercase tracking-widest">
           New Arrivals: The Great Gatsby <span className="material-symbols-outlined text-xs">auto_awesome</span> Special
@@ -61,7 +63,6 @@ export const Banner = () => {
         </span>
       </div>
     </section>
-      </section>
 
       <main className="bg-background text-on-background font-body-md flex flex-col">
       </main>

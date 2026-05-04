@@ -10,7 +10,7 @@ const AllBooks = () => {
   const [activeCategory, setActiveCategory] = useState('All')
 
   useEffect(() => {
-    fetch('https://online-book-borrowing-platform-rust.vercel.app/Data.json', { cache: 'no-store' })
+    fetch('/Data.json', { cache: 'no-store' })
       .then(r => r.json())
       .then(setBooks)
   }, [])

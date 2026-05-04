@@ -18,7 +18,7 @@ const BookDetails = ({ id }) => {
   }, [user, isPending, router])
 
   useEffect(() => {
-    fetch('https://online-book-borrowing-platform-rust.vercel.app/Data.json')
+    fetch('/Data.json')
       .then(r => r.json())
       .then(data => {
         setAllBooks(data)
