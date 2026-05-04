@@ -42,6 +42,25 @@ export const Banner = () => {
             </button>
           </div>
         </div>
+        <section className="bg-on-tertiary-container py-4 overflow-hidden">
+      <div className="marquee-track space-x-12 whitespace-nowrap">
+        <span className="text-surface-container-lowest font-label-md flex items-center gap-2 uppercase tracking-widest">
+          New Arrivals: The Great Gatsby <span className="material-symbols-outlined text-xs">auto_awesome</span> Special
+          Discount on Memberships <span className="material-symbols-outlined text-xs">stars</span> Rare Manuscripts
+          Added <span className="material-symbols-outlined text-xs">history_edu</span>
+        </span>
+        <span className="text-surface-container-lowest font-label-md flex items-center gap-2 uppercase tracking-widest">
+          New Arrivals: The Great Gatsby <span className="material-symbols-outlined text-xs">auto_awesome</span> Special
+          Discount on Memberships <span className="material-symbols-outlined text-xs">stars</span> Rare Manuscripts
+          Added <span className="material-symbols-outlined text-xs">history_edu</span>
+        </span>
+        <span className="text-surface-container-lowest font-label-md flex items-center gap-2 uppercase tracking-widest">
+          New Arrivals: The Great Gatsby <span className="material-symbols-outlined text-xs">auto_awesome</span> Special
+          Discount on Memberships <span className="material-symbols-outlined text-xs">stars</span> Rare Manuscripts
+          Added <span className="material-symbols-outlined text-xs">history_edu</span>
+        </span>
+      </div>
+    </section>
       </section>
 
       <main className="bg-background text-on-background font-body-md flex flex-col">
