@@ -6,7 +6,7 @@
     "description": "A mysterious tale of a village surrounded by a forest where no one dares to enter.",
     "category": "Story",
     "available_quantity": 12,
-    "image_url": "https://via.placeholder.com/200x300?text=Story+Book"
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "A beginner-friendly guide to mastering the fundamentals of JavaScript programming.",
     "category": "Tech",
     "available_quantity": 20,
-    "image_url": "https://via.placeholder.com/200x300?text=JS+Book"
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "An inspiring journey through space and the mysteries of the universe.",
     "category": "Science",
     "available_quantity": 15,
-    "image_url": "https://via.placeholder.com/200x300?text=Science+Book"
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "A suspense thriller uncovering secrets buried deep within a family.",
     "category": "Story",
     "available_quantity": 8,
-    "image_url": "https://via.placeholder.com/200x300?text=Story"
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "Learn how to build dynamic web applications using React.",
     "category": "Tech",
     "available_quantity": 18,
-    "image_url": "https://via.placeholder.com/200x300?text=React"
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
   },
   {
     "id": 6,
@@ -51,6 +51,6 @@
     "description": "An easy-to-understand exploration of quantum physics concepts.",
     "category": "Science",
     "available_quantity": 10,
-    "image_url": "https://via.placeholder.com/200x300?text=Physics"
+    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
   }
 ]
