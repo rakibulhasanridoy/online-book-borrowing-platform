@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { authClient } from '@/lib/auth-client'
 import toast from 'react-hot-toast'
+import { Avatar } from '@heroui/react'
 
 const Navbar = () => {
   const pathname = usePathname()
@@ -68,6 +69,18 @@ const Navbar = () => {
               Login
             </Link>
           )}
+          {/* {user &&(
+            <div>
+              <Avatar>
+                <Avatar.Image
+                alt="jon Doe"
+                src={user?.image}
+                />
+<Avatar.Fallback> {user?.name.charAt(0)}</Avatar.Fallback>
+                </Avatar>
+              
+            </div>
+          )} */}
         </div>
       </nav>
     </header>

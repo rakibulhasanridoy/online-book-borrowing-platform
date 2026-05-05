@@ -16,7 +16,7 @@ const TopGeneration = () => {
   useEffect(() => {
     fetch('/Data.json', { cache: 'no-store' })
       .then(r => r.json())
-      .then(setBooks)
+      .then(data => setBooks(data.slice(0, 4))) // ✅ Only top 4 books
   }, [])
 
   return (
