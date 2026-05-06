@@ -5,24 +5,23 @@ import { useRouter } from 'next/navigation'
 import { authClient } from '@/lib/auth-client'
 import toast from 'react-hot-toast'
 
-const Register = () => {
+  const Register = () => {
   const [form, setForm] = useState({ name: '', email: '', image: '', password: '' })
   const [loading, setLoading] = useState(false)
   const router = useRouter()
 
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value })
-
   const handleRegister = async (e) => {
     e.preventDefault()
     setLoading(true)
-    const { data, error } = await authClient.signUp.email({
+      const { data, error } = await authClient.signUp.email({
       name: form.name,
       email: form.email,
       password: form.password,
       image: form.image || undefined,
       callbackURL: '/login',
     })
-    if (error) {
+      if (error) {
       if (error.code === 'USER_ALREADY_EXISTS') toast.error('Email already registered.')
       else if (error.code === 'PASSWORD_TOO_SHORT') toast.error('Password must be at least 8 characters.')
       else toast.error(error.message || 'Registration failed.')
@@ -37,11 +36,13 @@ const Register = () => {
     await authClient.signIn.social({ provider: 'google', callbackURL: '/' })
   }
 
+
+  
   const fields = [
-    { label: 'Full Name',             name: 'name',     type: 'text',     placeholder: 'John Doe',                    required: true  },
-    { label: 'Email',                 name: 'email',    type: 'email',    placeholder: 'scholar@archive.org',          required: true  },
+    { label: 'Full Name',  name: 'name',type: 'text', placeholder: 'John Doe', required: true  },
+    { label: 'Email',  name: 'email',type: 'email', placeholder: 'scholar@archive.org', required: true  },
     { label: 'Photo URL (optional)',  name: 'image',    type: 'url',      placeholder: 'https://example.com/photo.jpg',required: false },
-    { label: 'Password',              name: 'password', type: 'password', placeholder: '••••••••',                    required: true  },
+    { label: 'Password',name: 'password', type: 'password', placeholder: '••••••••', required: true  },
   ]
 
   return (
@@ -49,34 +50,29 @@ const Register = () => {
       style={{ background: 'radial-gradient(circle at 50% 50%, rgba(255,221,184,0.15) 0%, #f7f9fb 70%)' }}>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-16 min-h-[calc(100vh-64px)] px-6 py-16 max-w-6xl mx-auto w-full">
 
-        {/* ── Left panel ── */}
-        <div className="flex-1 flex flex-col items-start gap-6 max-w-lg">
+          <div className="flex-1 flex flex-col items-start gap-6 max-w-lg">
           <h1 className="text-5xl font-bold text-slate-900 leading-tight" style={{ fontFamily: 'Newsreader, serif', letterSpacing: '-0.02em' }}>
             Join the Archive. Begin Your Journey.
-          </h1>
-          <p className="text-lg text-slate-500 leading-relaxed max-w-sm" style={{ fontFamily: 'Manrope, sans-serif' }}>
+           </h1>
+           <p className="text-lg text-slate-500 leading-relaxed max-w-sm" style={{ fontFamily: 'Manrope, sans-serif' }}>
             Thousands of scholars have already made ScholarArchive their intellectual home.
-          </p>
-          <div className="w-full max-w-[320px] aspect-square rounded-xl overflow-hidden shadow-xl">
+            </p>
+            <div className="w-full max-w-[320px] aspect-square rounded-xl overflow-hidden shadow-xl">
             <img
               src="https://i.ibb.co.com/Xf70wLWw/unnamed.png"
               alt="Library" className="w-full h-full object-cover"
             />
           </div>
-        </div>
-
-        {/* ── Right panel — glass card ── */}
-        <div className="w-full max-w-md">
-          <div className="bg-white/70 backdrop-blur-xl border border-slate-200 rounded-2xl shadow-xl p-10 flex flex-col gap-6">
-
-            {/* Heading */}
+           </div>
+          <div className="w-full max-w-md">
+            <div className="bg-white/70 backdrop-blur-xl border border-slate-200 rounded-2xl shadow-xl p-10 flex flex-col gap-6">
             <div>
               <h2 className="text-3xl font-bold text-slate-900" style={{ fontFamily: 'Newsreader, serif' }}>Create Account</h2>
               <p className="text-slate-500 text-sm mt-1">Join our archive and start your journey.</p>
-            </div>
+              </div>
 
             {/* Form */}
-            <form onSubmit={handleRegister} className="flex flex-col gap-4">
+              <form onSubmit={handleRegister} className="flex flex-col gap-4">
               {fields.map(({ label, name, type, placeholder, required }) => (
                 <div key={name} className="flex flex-col gap-1">
                   <label className="text-xs font-semibold text-slate-500 uppercase tracking-widest">{label}</label>
@@ -88,26 +84,21 @@ const Register = () => {
                   />
                 </div>
               ))}
-
-              <button
+                <button
                 type="submit" disabled={loading}
                 className="w-full py-3 rounded-lg text-sm font-semibold text-white flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all disabled:opacity-60"
                 style={{ background: '#006b5f' }}
               >
                 <span className="material-symbols-outlined text-base" style={{ fontVariationSettings: "'FILL' 1" }}>person_add</span>
                 {loading ? 'Creating account…' : 'Register'}
-              </button>
-            </form>
-
-            {/* Divider */}
-            <div className="flex items-center gap-3">
-              <div className="flex-1 h-px bg-slate-200" />
-              <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest">or join with</span>
-              <div className="flex-1 h-px bg-slate-200" />
-            </div>
-
-            {/* Google */}
-            <button
+                </button>
+               </form>
+               <div className="flex items-center gap-3">
+                <div className="flex-1 h-px bg-slate-200" />
+                <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest">or join with</span>
+                <div className="flex-1 h-px bg-slate-200" />
+                </div>
+               <button
               onClick={handleGoogle}
               className="w-full flex items-center justify-center gap-3 py-2.5 border border-slate-200 rounded-lg bg-white hover:bg-slate-50 transition-colors text-sm font-medium text-slate-700 active:scale-[0.98]"
             >
@@ -127,10 +118,10 @@ const Register = () => {
             </p>
           </div>
         </div>
-
       </div>
-    </div>
+        </div>
   )
 }
+
 
 export default Register

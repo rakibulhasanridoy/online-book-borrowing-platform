@@ -1,10 +1,9 @@
-import { Suspense } from "react";
-import Authors from "@/Components/Authors";
-import { Banner } from "@/Components/Banner";
-import Body from "@/Components/Body";
-import Membership from "@/Components/Membership";
-import TopGeneration from "@/Components/TopGeneration";
-
+  import { Suspense } from "react";
+  import Authors from "@/Components/Authors";
+  import { Banner } from "@/Components/Banner";
+  import Body from "@/Components/Body";
+  import Membership from "@/Components/Membership";
+  import TopGeneration from "@/Components/TopGeneration";
 export default function Home() {
   return (
     <div>
@@ -15,6 +14,6 @@ export default function Home() {
       <Body />
       <Membership />
       <Authors />
-    </div>
+      </div>
   );
 }

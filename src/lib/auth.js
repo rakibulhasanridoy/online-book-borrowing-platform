@@ -14,6 +14,8 @@ const client = new MongoClient(process.env.MONGODB_URI,{
 const db = client.db('online-book-borrowing-platform');
 
 export const auth = betterAuth({
+  baseURL: process.env.BETTER_AUTH_URL,        // ← Add this
+  trustedOrigins: ["http://localhost:3000"],
   secret: process.env.BETTER_AUTH_SECRET,
   database: mongodbAdapter(db, {
     

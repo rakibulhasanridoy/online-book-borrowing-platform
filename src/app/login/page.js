@@ -7,6 +7,8 @@ import { authClient } from '@/lib/auth-client'
 import toast from 'react-hot-toast'
 import { Mail, Lock, ArrowRight, Library } from 'lucide-react'
 
+
+
 export default function LoginPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')

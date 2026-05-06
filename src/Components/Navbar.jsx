@@ -40,13 +40,11 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-
         <div className="flex items-center gap-4">
           <div className="relative hidden lg:block">
             <input className="bg-slate-100 border-none rounded-full px-4 py-1.5 text-sm w-52 focus:outline-none focus:ring-2 focus:ring-amber-400/30"
               placeholder="Search archives..." type="text" />
           </div>
-
           {isPending ? (
             <div className="w-8 h-8 rounded-full bg-slate-200 animate-pulse" />
           ) : user ? (
@@ -64,27 +62,17 @@ const Navbar = () => {
               </button>
             </div>
           ) : (
-            <Link href="/login"
+               <Link href="/login"
               className="bg-[#b57a00] hover:bg-[#966500] text-white px-5 py-2 rounded-xl text-sm font-medium transition-all active:scale-95">
               Login
             </Link>
           )}
-          {/* {user &&(
-            <div>
-              <Avatar>
-                <Avatar.Image
-                alt="jon Doe"
-                src={user?.image}
-                />
-<Avatar.Fallback> {user?.name.charAt(0)}</Avatar.Fallback>
-                </Avatar>
-              
-            </div>
-          )} */}
         </div>
-      </nav>
-    </header>
+          </nav>
+        </header>
   )
 }
+
+
 
 export default Navbar
