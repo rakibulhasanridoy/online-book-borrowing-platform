@@ -15,7 +15,7 @@ const db = client.db('online-book-borrowing-platform');
 
 export const auth = betterAuth({
   baseURL: process.env.BETTER_AUTH_URL,        // ← Add this
-  trustedOrigins: ["http://localhost:3000"],
+  trustedOrigins: ["http://localhost:3000" , "https://rakibulhasanridoy-online-book-borro.vercel.app"],
   secret: process.env.BETTER_AUTH_SECRET,
   database: mongodbAdapter(db, {
     
