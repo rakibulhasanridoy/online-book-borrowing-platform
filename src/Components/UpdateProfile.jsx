@@ -14,7 +14,7 @@ export default function UpdateProfile() {
   const [preview, setPreview] = useState(null)
   const [previewError, setPreviewError] = useState(false)
   const [saving, setSaving] = useState(false)
-
+  const hasInitialized = useRef(false)
 
 
   useEffect(() => {
@@ -22,13 +22,19 @@ export default function UpdateProfile() {
       router.replace('/login')
     }
   }, [isPending, user, router])
+  
   useEffect(() => {
-    if (user) {
-    setName(user.name || '')
-      setImageUrl(user.image || '')
-      setPreview(user.image || null)
+    if (user && !hasInitialized.current) {
+      hasInitialized.current = true
+      
+      setTimeout(() => {
+        setName(user.name || '')
+        setImageUrl(user.image || '')
+        setPreview(user.image || null)
+      }, 0)
     }
   }, [user])
+
   const handlePreview = () => {
     if (!imageUrl.trim()) {
       toast.error('Please enter an image URL first.')
