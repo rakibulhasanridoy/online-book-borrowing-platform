@@ -88,6 +88,15 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
 .glass-panel {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
