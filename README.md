@@ -269,3 +269,21 @@ http://localhost:3000
 **Rakibul Hasan Ridoy**  
 ScholarArchive  Assignment Project  
 Built with ❤️ using Next.js
+
+## Preview
+## Screenshots
+
+### Home
+![Main Interface](https://i.ibb.co.com/d01S3bGZ/screencapture-localhost-3000-2026-05-07-14-01-24.png)
+
+### All Page
+![Mobile](https://i.ibb.co.com/sJkR8b9f/Allpage.png)
+
+### Login Page
+![Settings](https://i.ibb.co.com/ymGhnMgR/Login-page.png)
+
+### Profile
+![Settings](https://i.ibb.co.com/xSMH58Tb/Profile.png)
+
+### Update Profile
+![Settings](https://i.ibb.co.com/kVC5k03t/update.png)
