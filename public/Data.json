@@ -42,7 +42,7 @@
     "description": "Learn how to build dynamic web applications using React.",
     "category": "Tech",
     "available_quantity": 18,
-    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+    "image_url": "https://i.ibb.co.com/C5pj2xC9/51-MKEd-Us-XFL.jpg"
   },
   {
     "id": 6,
@@ -51,16 +51,16 @@
     "description": "An easy-to-understand exploration of quantum physics concepts.",
     "category": "Science",
     "available_quantity": 10,
-    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+    "image_url": "https://i.ibb.co.com/Y7KS2XpN/51nxjs-Hti8-L.webp"
   },
   {
     "id": 7,
     "title": "The Last Lighthouse",
-    "author": "Mira Sultana",
+    "author": "Sharma Krauskope",
     "description": "A heartwarming story of a lonely lighthouse keeper who discovers an old letter that changes everything.",
     "category": "Story",
     "available_quantity": 14,
-    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+    "image_url": "https://i.ibb.co.com/4nVSn3cp/31g0-NE2-IJf-L.webp"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "A hands-on introduction to Python programming with real-world projects and examples.",
     "category": "Tech",
     "available_quantity": 25,
-    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+    "image_url": "https://i.ibb.co.com/8nTL1rtD/51-E8-W3x-YR2-L.webp"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "A fascinating deep-dive into neuroscience, exploring how our brain shapes thoughts and behavior.",
     "category": "Science",
     "available_quantity": 9,
-    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+    "image_url": "https://i.ibb.co.com/mQH2dPm/51yns-Dm-KS8-L.webp"
   },
   {
     "id": 10,
@@ -87,24 +87,24 @@
     "description": "A poetic love story set in Dhaka during monsoon season, exploring longing and loss.",
     "category": "Story",
     "available_quantity": 11,
-    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+    "image_url": "https://i.ibb.co.com/0RfrSfxf/41-GTff-LEPJL.webp"
   },
   {
     "id": 11,
-    "title": "Node.js Deep Dive",
+    "title": "Node.js: Novice to Ninja",
     "author": "Carlos Mendes",
     "description": "Master backend development with Node.js, covering REST APIs, authentication, and deployment.",
     "category": "Tech",
     "available_quantity": 16,
-    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+    "image_url": "https://i.ibb.co.com/jvXTk2bm/image.webp"
   },
   {
     "id": 12,
-    "title": "Climate and the Future",
-    "author": "Dr. Sabbir Ahmed",
+    "title": "A Great Aridness",
+    "author": "William Debuys",
     "description": "A scientific look at climate change, its causes, effects, and what humanity can do to reverse it.",
     "category": "Science",
     "available_quantity": 13,
-    "image_url": "https://i.ibb.co.com/Xf70wLWw/unnamed.png"
+    "image_url": "https://i.ibb.co.com/1tVXC4dt/41x-WWw-VY6-FL.webp"
   }
 ]

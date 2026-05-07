@@ -5,7 +5,6 @@ import { usePathname, useRouter } from 'next/navigation'
 import { authClient } from '@/lib/auth-client'
 import toast from 'react-hot-toast'
 import { Menu, X } from 'lucide-react'
-
 const Navbar = () => {
   const pathname = usePathname()
   const router = useRouter()
@@ -30,7 +29,6 @@ const Navbar = () => {
     <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
       <nav className="flex justify-between items-center h-16 px-8 max-w-screen-2xl mx-auto">
 
-        {/* LEFT — hamburger + logo */}
         <div className="flex items-center gap-3">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -44,7 +42,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* CENTER — desktop links */}
         <div className="hidden md:flex items-center space-x-8">
           {links.map(({ label, href }) => (
             <Link key={href} href={href}
@@ -55,8 +52,6 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-
-        {/* RIGHT — search + auth */}
         <div className="flex items-center gap-4">
           <div className="relative hidden lg:block">
             <input
@@ -88,8 +83,6 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-
-      {/* Mobile dropdown menu */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-slate-100 shadow-lg px-6 py-4 flex flex-col gap-1">
           {links.map(({ label, href }) => (
@@ -111,5 +104,9 @@ const Navbar = () => {
     </header>
   )
 }
+
+
+
+
 
 export default Navbar
